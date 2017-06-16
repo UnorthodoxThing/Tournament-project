@@ -1,6 +1,6 @@
 *Tournament program version 1.0 16/06/2017*
 
-"Tournament project shows you how..."
+>"Tournament project emulates a Swiss tournament system. Using the python application >(`tournament_test.py`) you can check if your database and query pass or usable."
 
 ## General Usage Notes:
 - This program use a Virtual Machine(VM) to run the python application on the computer.
@@ -70,9 +70,9 @@ tournament=> select * from standings;
 
 Tournament program can be reached at:
 
-Voice: n/a
-Web site: n/a
-E-mail: unorthodoxthing@gmail.com
+>Voice: n/a
+>Web site: n/a
+>E-mail: unorthodoxthing@gmail.com
 
 _Copyright 2016
 Copyright for educational purposes from Udacity as Intro To Programming - Exracurricular Back-End Developer: Tournament Results Project
