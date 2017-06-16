@@ -34,8 +34,8 @@ If you want to check errors in the your codes, the run the following command:
 
 It uses the tournament_test.py file to pass in your code, and display where in a Swiss system tournament inputs fail.
 
-## Available input types
-RDBMS, Relational Database, PostgreSQL(psycopg2)
+## Available Input Types and Examples
+The program use Relational Database with PostgreSQL(psycopg2).
 
 The following tables are involved in the database `tournament.sql`.
 
