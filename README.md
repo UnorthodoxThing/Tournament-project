@@ -70,9 +70,11 @@ tournament=> select * from standings;
 
 Tournament program can be reached at:
 
-* Voice: n/a
-> * Web site: n/a
->E-mail: unorthodoxthing@gmail.com
+Voice: n/a
+
+Web site: n/a
+
+E-mail: unorthodoxthing@gmail.com
 
 _Copyright 2016
 Copyright for educational purposes from Udacity as Intro To Programming - Exracurricular Back-End Developer: Tournament Results Project
