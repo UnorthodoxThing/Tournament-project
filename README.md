@@ -19,11 +19,11 @@ The project involved installing the following softwares:
 NB: Tested only in Windows 10 via [GitBash](https://git-for-windows.github.io/), and opened with [Atom](https://atom.io/) text Editor.
 
 ## Running
-1. Open cmd shell, and located to the following directory: cd /vagrant
-2. Start-up Vagrant with the following code: vagrant up
+1. Open cmd shell, and located to the following directory: `cd /vagrant`
+2. Start-up Vagrant with the following code: `vagrant up`
     _If you haven't installed it before it may take several minutes or depending on
 your internet speed. After that, whenever you start it up again it should only take seconds._
-3. Login Vagrant with the following code: vagrant ssh
+3. Login Vagrant with the following code: `vagrant ssh`
 4. Now you can have access to the program!
 
 You can write query (SQL) in the tournament.sql file to create, delete or alter database and tables.
@@ -41,18 +41,19 @@ The following tables are involved in the database `tournament.sql`.
 
 NB: To an extent, I used VIEW to normalized my data.
 
-`
+```
 tournament=> \dt
          List of relations
  Schema |  Name   | Type  |  Owner
 --------+---------+-------+---------
  public | matches | table | vagrant
  public | players | table | vagrant
-(2 rows)`
+(2 rows)
+```
 
-'
 Below is example of the database production when running the `tournament_test.py`.
-'
+
+```
 tournament=> select * from standings;
  id  |    player_name    | total_wins | view_played | matches_played
 -----+-------------------+------------+-------------+----------------
@@ -65,8 +66,8 @@ tournament=> select * from standings;
  571 | Princess Celestia |          0 | (571,0)     |              0
  572 | Princess Luna     |          0 | (572,0)     |              0
 (8 rows)
-'
----
+```
+
 Tournament program can be reached at:
 
 Voice: n/a
