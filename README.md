@@ -2,7 +2,7 @@
 
 "Tournament project shows you how..."
 
-## GENERAL USAGE NOTES:
+## General Usage Notes:
 - This program use a Virtual Machine(VM) to run the python application on the computer.
 It adapt the application to use a database backend. If you're already experienced in this field
 you may use your own device for creating your database.
@@ -10,11 +10,11 @@ you may use your own device for creating your database.
 
 ## Installation and Setup
 The project involved installing the following softwares:
--[python 2.7.13](https://www.python.org/downloads/release/python-2713/) (opt. python 3, most recent)
--[vagrant](https://www.vagrantup.com/)
-    _easy access without creating user, password, server etc._
--[Virtual Machine(VM)](https://www.virtualbox.org/wiki/Downloads) - Choose under 'platform packages'
-    _checks if system is running_
+- [python 2.7.13](https://www.python.org/downloads/release/python-2713/) (opt. python 3, most recent)
+- [vagrant](https://www.vagrantup.com/)
+    * _easy access without creating user, password, server etc._
+- [Virtual Machine(VM)](https://www.virtualbox.org/wiki/Downloads) - Choose under 'platform packages'
+    * _checks if system is running_
 
 NB: Tested only in Windows 10 via [GitBash](https://git-for-windows.github.io/), and opened with [Atom](https://atom.io/) text Editor.
 
@@ -30,28 +30,29 @@ You can write query (SQL) in the tournament.sql file to create, delete or alter 
 
 If you want to check errors in the your codes, the run the following command:
 
-`<$ python tournament_test.py>`
+`$ python tournament_test.py`
 
 It uses the tournament_test.py file to pass in your code, and display where in a Swiss system tournament inputs fail.
 
-<h2> Available input types
+## Available input types
 RDBMS, Relational Database, PostgreSQL(psycopg2)
 
 The following tables are involved in the database `tournament.sql`.
 
 NB: To an extent, I used VIEW to normalized my data.
 
-'''
+`
 tournament=> \dt
          List of relations
  Schema |  Name   | Type  |  Owner
 --------+---------+-------+---------
  public | matches | table | vagrant
  public | players | table | vagrant
-(2 rows)
-'''
+(2 rows)`
+
+'
 Below is example of the database production when running the `tournament_test.py`.
-'''
+'
 tournament=> select * from standings;
  id  |    player_name    | total_wins | view_played | matches_played
 -----+-------------------+------------+-------------+----------------
@@ -64,14 +65,14 @@ tournament=> select * from standings;
  571 | Princess Celestia |          0 | (571,0)     |              0
  572 | Princess Luna     |          0 | (572,0)     |              0
 (8 rows)
-'''
-
+'
+---
 Tournament program can be reached at:
 
 Voice: n/a
 Web site: n/a
 E-mail: unorthodoxthing@gmail.com
 
-Copyright 2016
+_Copyright 2016
 Copyright for educational purposes from Udacity as Intro To Programming - Exracurricular Back-End Developer: Tournament Results Project
-All other brand and product names are trademarks or registered
+All other brand and product names are trademarks or registered_
